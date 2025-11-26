@@ -51,7 +51,7 @@ The problems of regular shopping:
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/D-Arshad-Dazai-Dimash/SmartCartProject_16-P
+   git clone https://github.com/D-Arshad-Dazai-Dimash/SmartCart
    ```
 2. Open the project in **Android Studio**
 3. Make sure that Gradle is successfully synchronized
