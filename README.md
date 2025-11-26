@@ -127,9 +127,9 @@ Currently, the application is tested manually by:
 
 ## 👥 Team Members
 
-* Dimash Yeskendir, 220103327, 16-P
-* Olzhas Musakhan, 220103033, 16-P
-* Asylzhan Bitore, 220103181, 14-P
-* Ayan Amantay, 123456, 16-P
-* Damir Turgambekov, 220103278, 17-P
+* Dimash Yeskendir
+* Olzhas Musakhan
+* Asylzhan Bitore
+* Ayan Amantay
+* Damir Turgambekov
 
