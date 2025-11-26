@@ -1,135 +1,104 @@
-## 📄 **README.md**
+# SmartCart — a mobile smart shopping cart system
 
-# SmartCart: Mobile Shopping Smart Cart  
+## 📝 About the project
 
-## 📝 Introduction
-SmartCart is a mobile application designed to enhance the in-store shopping experience by allowing customers to scan product barcodes directly with their smartphone. Each scanned product is automatically added to a virtual shopping cart where users can manage product quantities, view details, and calculate the total price in real-time.
-
-This project helps customers keep track of their purchases while shopping and simplifies the checkout process.
-
----
-
-## ❓ Problem Statement
-In physical retail stores, customers often struggle with:
-- Keeping track of purchased items manually.
-- Forgetting how many units of a product they’ve picked.
-- Waiting in long checkout lines.
-- Not knowing the total amount spent until checkout.
-
-SmartCart solves these problems by enabling customers to scan product barcodes as they shop, automatically adding them to a digital cart with real-time price tracking and quantity management.
+SmartCart is a mobile application that facilitates the shopping process in regular stores.
+Scan the barcode of the product through the camera and it will be automatically added to your virtual shopping cart.
+All prices and quantity are always under control!
 
 ---
 
-## 🎯 Objectives
-The main goals of SmartCart are:
-- ✅ Allow customers to **scan product barcodes** using their phone’s camera.
-- ✅ **Automatically add products** to a virtual shopping cart.
-- ✅ **Merge duplicate scans** by increasing the product quantity rather than duplicating items.
-- ✅ Let users **adjust product quantity** directly in the cart.
-- ✅ Display the **total price** of the cart in real-time.
-- ✅ Provide an intuitive, easy-to-use user interface.
-- ✅ Lay the groundwork for future payment system integration.
+## ❓ What are we solving
+
+The problems of regular shopping:
+
+* it is difficult to keep track of the total amount,
+* it is easy to forget how many items have already been taken,
+* queues at the checkout waste time,
+* unexpected amount at the checkout.
+
+**SmartCart** helps you shop consciously and saves you time.
 
 ---
 
-## 🏗️ Technology Stack
+## 🎯 Main functionality
 
-| Layer        | Tools / Libraries Used                                 |
-|--------------|--------------------------------------------------------|
-| **Frontend** | Jetpack Compose (Kotlin)                               |
-| **Backend**  | Kotlin                                                 |
-| **Scanner**  | Google ML Kit Barcode Scanning                         |
-| **Camera**   | Android CameraX                                        |
-| **Other**    | Android SDK, Kotlin Coroutines, MediaPlayer API        |
-| **Database** | Firebase Realtime Database                             |
+* 📷 Barcode scanning
+* 🛒 Automatic adding of products to the basket
+* 🔁 Repeat scan — increase the number of
+* ➕➖ Manual quantity management
+* 💰 Automatic calculation of the total amount
+* 🎨 User -friendly and minimalistic interface
+* 💳 Preparation for future payment integration
+
 ---
 
-## 🛠️ Installation Instructions
+## ⚙️ Technologies used
 
-Follow these steps to set up and run the project locally:
+| Component | Technologies |
+| ------------- | ------------------------------ |
+| Interface | Jetpack Compose |
+| Language | Kotlin |
+| Scanner | Google ML Kit Barcode Scanning |
+| Camera | Android CameraX |
+| Database | Firebase Realtime Database |
+| Asynchrony | Kotlin Coroutines |
+
+---
+
+## 🚀 Project launch
 
 1. **Clone the repository:**
+
    ```bash
    git clone https://github.com/D-Arshad-Dazai-Dimash/SmartCartProject_16-P
+   ```
+2. Open the project in **Android Studio**
+3. Make sure that Gradle is successfully synchronized
+4. Add the `google-services' file.json` to the `app/` folder
+5. Launch the project on your device or emulator
+6. Allow access to the camera
 
-2. **Open the project in Android Studio:**
-
-   * Open Android Studio.
-   * Click **“Open an existing project”**.
-   * Navigate to the cloned `smartcart` folder.
-
-3. **Sync Gradle:**
-
-   * If Gradle doesn’t sync automatically, click **“Sync Project with Gradle Files”**.
-
-4. **Add Firebase configuration:**
-
-   * Download the **`google-services.json`** file from your Firebase project.
-   * Place the file inside the **`app/`** directory.
-
-5. **Run the application:**
-
-   * Connect your Android device or launch an emulator.
-   * Press **Run ▶️** in Android Studio.
-
-⚠️ **Note:**
-
-* The app requires **Camera Permission** to function.
-* Make sure your Firebase Realtime Database is properly configured and active.
+> Requires an internet connection to work with Firebase
 
 ---
 
-## 🕹️ Usage Guide
+## 🕹 How to use
 
-Here’s how to use SmartCart:
+* Open the app and the camera will start
+* Hover over the barcode and the product will be added
+* Repeated scanning increases the number of
+* In the shopping cart you can:
 
-1. **Launch the app** — the barcode scanner will open.
-2. **Point your phone’s camera at a product barcode** — the barcode will be scanned automatically.
-3. **A beep sound will play**, and the product will be added to your cart.
-4. If you scan the same product again, **the quantity will increase by 1 instead of adding a duplicate.**
-5. **Click the cart button** to view the cart.
-6. In the cart screen, you can:
-
-   * See all added products with names, prices, and quantities.
-   * Increase or decrease quantity using the **+** and **–** buttons.
-   * Remove an item by clicking the **trash icon**.
-7. **Click "Go to Payment"** to proceed (currently a placeholder screen).
-
-✅ The total price updates automatically as you adjust quantities.
+  * change the quantity
+  * delete products
+* The total amount is updated automatically
+* The payment screen is still a blank
 
 ---
 
-## 🧪 Testing
+## , Testing
 
-Currently, the application is tested manually by:
-
-* Running on physical Android devices.
-* Running on Android Studio emulator.
----
-
-## ⚠️ Known Issues / Limitations
-
-* Barcode detection may be less accurate under poor lighting conditions.
-* App tested only on Android **API level 26+** (Android 8.0 and above).
-* Payment gateway not implemented (navigation only).
-* Requires a stable internet connection for Firebase.
+* Android Studio Emulator
+* Testing on real devices
 
 ---
 
-## 📚 References
+## ⚠️ Restrictions
 
-* [Firebase Realtime Database Documentation](https://smart-9f34e-default-rtdb.firebaseio.com/)
-* [ML Kit Barcode Scanning Documentation](https://developers.google.com/ml-kit/vision/barcode-scanning?hl=ru)
-* [CameraX Documentation](https://developer.android.com/media/camera/camerax?hl=ru)
-* [Jetpack Compose Official Docs](https://developer.android.com/develop/ui/compose/documentation?hl=ru)
+* Low lighting impairs speech recognition
+* Android support from version **8.0 / API 26**
+* Online payment has not been implemented
+* Firebase works only when the Internet is available
 
 ---
 
-## 👥 Team Members
+## 👥 Team
 
-* Dimash Yeskendir
-* Olzhas Musakhan
-* Asylzhan Bitore
-* Ayan Amantay
-* Damir Turgambekov
-
+| Member |
+| ----------------- |
+| Dimash Yeskendir | 
+| Olzhas Musakhan   | 
+| Asylzhan Bitore   |
+| Ayan Amantay      |
+---
